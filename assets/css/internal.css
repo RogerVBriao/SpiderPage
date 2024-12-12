@@ -1,23 +1,28 @@
 @import url('reset.css');
 @import url('global.css');
+@import url('menuPrincipal.css');
 @import url('components/_navigator.css');
 @import url('components/_pills.css');
 @import url('components/_link-button.css');
 @import url('components/_gallery.css');
 
+*body{
+  background-color: var(--primary-color);
+}
+/* Wrapper */
 .s-wrapper {
   display: flex;
   height: 100vh;
-  flex-flow: row nowrap; 
-  background-color: aqua; 
+  flex-flow: row nowrap;
+  position:absolute;
 }
 
 .s-wrapper video{
   position: fixed;
   width: 100%;
-
 }
 
+/* Coluna da esquerda com menu (Left Column with menu)  */
 .s-wrapper .s-left-column {
   width: 100px;
   height: 100%;
@@ -31,6 +36,7 @@
   z-index: 1;
 }
 
+/* Main Content (Main Content) */
 .s-wrapper .s-main-content{
   height: 100%;
   width: 100%;
@@ -38,13 +44,14 @@
   position: relative;
 }
 
+/* Main Content Top (Main Content Top) */
 .s-wrapper .s-main-content__top {
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
+/* Main Content Bottom (Main Content Bottom) */
 .s-wrapper .s-main-content__bottom{
   height: 20vh;
   display: flex;

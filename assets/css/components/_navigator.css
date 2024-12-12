@@ -55,3 +55,10 @@
   position: absolute;
   top: -20px;
 }
+
+.s-controller__button--active {
+  background-color: white;
+  color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  outline: 0.125rem solid white;
+}

@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('global.css');
+@import url('menuPrincipal.css');
 
 body {
   background-color: var(--primary-color);
@@ -18,24 +19,6 @@ body::before {
   transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.s-menu {
-  padding: 1rem 0;
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-.s-menu__item {
-  display: inline-block;
-  text-transform: uppercase;
-  margin: 0 1.25rem;
-}
-
-.s-menu__icon {
-  width: 2.5rem;
-  margin: 0 1.25rem;
-  vertical-align: middle;
-}
 
 .s-container {
   position: relative;
